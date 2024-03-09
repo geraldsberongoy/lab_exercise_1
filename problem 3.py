@@ -12,14 +12,12 @@
 # Message: THISISTHELASTTASKHOORDAY
 # Key: KNIGHTS
 
-import string
-
 message = str(input("Enter a message: ").upper().replace(" ", ""))
 key = str(input("Enter a key: ").upper()).replace(" ", "")
 len_message = len(message)
 len_key = len(key)
 
-letter_a_to_z = string.ascii_uppercase
+letter_a_to_z = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 dict_map= {}
 
 for index in letter_a_to_z:
