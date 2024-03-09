@@ -1,3 +1,17 @@
+"""
+************************************************************************
+   Programmed By: Gerald S. Berongoy                                                     
+   Course and Section: BSCpE 1-4                                                         
+   Instructor: Prof. Julius S. Cansino                                                      
+   Date Submitted:  March 09, 2024                                                    
+************************************************************************
+"""
+# Write a program that asks the user for the plaintext (all uppercase letters, no  spaces)  
+# and  the  keyword  (all  uppercase  letters)  and  produce  the ciphertext using the Vigenère cipher. 
+# Give the output of your program for the following message and key:
+# Message: THISISTHELASTTASKHOORDAY
+# Key: KNIGHTS
+
 import string
 
 message = str(input("Enter a message: ").upper().replace(" ", ""))
@@ -6,7 +20,6 @@ len_message = len(message)
 len_key = len(key)
 
 letter_a_to_z = string.ascii_uppercase
-print(letter_a_to_z)
 dict_map= {}
 
 for index in letter_a_to_z:
