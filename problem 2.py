@@ -16,7 +16,7 @@
 # Enter a string to decrypt: th& q!#ck br+wn f+x j!mps +v&r th& l*zy d+g.
 # The Plain Text:the quick brown fox jumps over the lazy dog.
 
-str_input = input("Enter a string to encrypt: ")
+str_input = input("Enter a string to decrypt: ")
 str_input = str_input.lower()
 for i in str_input:
     if i == "*":
@@ -31,4 +31,3 @@ for i in str_input:
         str_input = str_input.replace(i, "u")
 print("Decrypted string:", str_input)
 
-# add

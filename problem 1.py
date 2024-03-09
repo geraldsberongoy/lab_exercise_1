@@ -14,7 +14,10 @@
 # See sample output:
 # Enter a string to encrypt: the quick brown fox jumps over the lazy dog.
 # Encrypted string:th& q!#ck br+wn f+x j!mps +v&r th& l*zy d+g
-
+separator = "*"*60
+title = "Problem: 1"
+author = "Gerald S. Berongoy"
+print(f"{separator}\nProgram: {title}\nProgrammed by: {author}\n{separator}")
 str_input = input("Enter a string to encrypt: ")
 str_input = str_input.lower()
 
