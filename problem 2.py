@@ -16,11 +16,6 @@
 # Enter a string to decrypt: th& q!#ck br+wn f+x j!mps +v&r th& l*zy d+g.
 # The Plain Text:the quick brown fox jumps over the lazy dog.
 
-separator = "*"*60
-title = "Problem: 2"
-author = "Gerald S. Berongoy"
-print(f"{separator}\nProgram: {title}\nProgrammed by: {author}\n{separator}")
-
 str_input = input("Enter a string to encrypt: ")
 str_input = str_input.lower()
 for i in str_input:
