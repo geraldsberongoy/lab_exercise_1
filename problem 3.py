@@ -12,6 +12,22 @@
 # Message: THISISTHELASTTASKHOORDAY
 # Key: KNIGHTS
 
+def char_to_num(text):
+    converted_list = []
+    for char in text:
+        for keys, value in dict_map.items():
+            if keys == char:
+                converted_list.append(value)
+    return converted_list
+
+def num_to_char(text):
+    result = []
+    for chars in text:
+        for keys, value in dict_map.items():
+            if value == chars:
+                result.append(keys)
+    return result
+
 message = str(input("Enter a message: ").upper().replace(" ", ""))
 key = str(input("Enter a key: ").upper()).replace(" ", "")
 len_message = len(message)
@@ -28,22 +44,6 @@ if not len_message == len_key:
     for index in range(len_message):
         key_fill += key[index % len_key]
     key = key_fill
-
-def char_to_num(text):
-    converted_list = []
-    for char in text:
-        for keys, value in dict_map.items():
-            if keys == char:
-                converted_list.append(value)
-    return converted_list
-
-def num_to_char(text):
-    result = []
-    for chars in text:
-        for keys, value in dict_map.items():
-            if value == chars:
-                result.append(keys)
-    return result
 
 message_cipher = char_to_num(message)
 key_cipher = char_to_num(key)
